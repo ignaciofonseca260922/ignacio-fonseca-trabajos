@@ -1,0 +1,17 @@
+# Clase Miembro
+class Miembro:
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.libros_prestados = []
+
+    def prestar(self, libro):
+        self.libros_prestados.append(libro.titulo)
+        print(f"{self.nombre} ha prestado '{libro.titulo}'")
+
+    def devolver(self, libro):
+        if libro.titulo in self.libros_prestados:
+            self.libros_prestados.remove(libro.titulo)
+            print(f"{self.nombre} ha devuelto '{libro.titulo}'")
+        else:
+            print(f"{self.nombre} no tiene prestado '{libro.titulo}'")
+            

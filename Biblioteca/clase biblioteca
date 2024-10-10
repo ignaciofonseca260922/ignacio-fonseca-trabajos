@@ -1,0 +1,13 @@
+# Clase Biblioteca
+class Biblioteca:
+    def __init__(self):
+        self.catalogo = []
+
+    def agregar_libro(self, libro):
+        self.catalogo.append(libro)
+
+    def buscar_libro(self, titulo):
+        for libro in self.catalogo:
+            if libro.titulo.lower() == titulo.lower():
+                return libro
+        return None

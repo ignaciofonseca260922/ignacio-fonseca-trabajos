@@ -1,0 +1,4 @@
+dsaewqesad
+git remote add origin https://github.com/ignaciofonseca260922/ignacio-fonseca-trabajos.git
+git branch -M main
+git push -u origin main
